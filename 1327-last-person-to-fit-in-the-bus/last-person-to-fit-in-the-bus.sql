@@ -10,7 +10,7 @@ select
 from queue
 )
 select 
-b.person_name
+    b.person_name
 from (
 select
 max(turn) as turn_number
