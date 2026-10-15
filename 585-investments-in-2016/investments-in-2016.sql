@@ -1,13 +1,4 @@
 # Write your MySQL query statement below
--- with cte as 
--- (
--- select 
---     pid,
---     tiv_2015,
---     tiv_2016,
---     concat(lat, lon) as lat_lon
--- from insurance 
--- ) 
 select 
     round(sum(tiv_2016),2) as tiv_2016
 from (select 
