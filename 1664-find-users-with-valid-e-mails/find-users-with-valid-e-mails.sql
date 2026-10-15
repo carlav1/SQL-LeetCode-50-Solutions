@@ -1,8 +1,8 @@
-SELECT 
+select
     user_id,
     name,
     mail
-FROM users
-WHERE REGEXP_LIKE(mail, '^[a-zA-Z][a-zA-Z0-9_.-]*@leetcode\\.com$', 'c');
+from users
+where regexp_like(mail, '^[a-zA-Z][a-zA-Z0-9_.-]*@leetcode\\.com$', 'c');
 
 
